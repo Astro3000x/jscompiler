@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="790266979225-8dtl32p7ufg06rg4bfes5n9tigrn2sju.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<p><button><a href="#" onclick="javascript:signOut();">Sign out</a></button></p>
+
+<p><img src="" id="profileimg"></img></p>
+<p id="profilename"></p>
 <html>
   <head>
     <meta charset="utf-8">
@@ -17,8 +25,10 @@
     <p><button><a href="javascript:run()">Run</a></button>
     <button><a href="javascript:save()">Save</a></button>
     <button><a href="index.html">Light Theme</a></button>
-    
+    <p>
     <button><a href="dark.html">Dark Theme</a></button></p>
+    <button><a href="javascript:download();" download="">Save To Computer</a></button></p>
+    <button><a href="sharepage.html">Community Page</a></button></p>
     <button><a href="guide.html">How To Open Console</a></button>
     <p><button><a href="submissionpage.html">Submit A Page To Put on The Community Page</a></button></p>
     <p><b>Made By Astro3000</b></p>
