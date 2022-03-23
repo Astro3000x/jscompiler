@@ -1,6 +1,13 @@
 function download() {
   var code = document.getElementById("txt").value;
-  document.write("Code: <br>" + code);
+  var textToSave = code;
+
+  var hiddenElement = document.createElement('a');
+
+  hiddenElement.href = 'data:attachment/javascript,' + encodeURI(textToSave);
+  hiddenElement.target = '_blank';
+  hiddenElement.download = 'project.js';
+  hiddenElement.click();
 }
 
 function onSignIn(googleUser) {
@@ -37,3 +44,4 @@ function save() {
     var code = document.getElementById("txt").value;
 
 }
+
