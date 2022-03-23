@@ -6,7 +6,8 @@ function download() {
 
   hiddenElement.href = 'data:attachment/javascript,' + encodeURI(textToSave);
   hiddenElement.target = '_blank';
-  hiddenElement.download = 'project.js';
+  var pname = window.prompt("Project Name");
+  hiddenElement.download = pname + '.js';
   hiddenElement.click();
 }
 
