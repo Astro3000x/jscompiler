@@ -28,6 +28,33 @@
     <p>
     <button><a href="dark.html">Dark Theme</a></button></p>
     <button><a href="javascript:download();" download="">Save To Computer</a></button></p>
+        Upload File: <input type="file" onchange="javascript:previewFile()" accept=".js"><br>
+<p class="content"></p>
+<script>
+  function previewFile() {
+    const content = document.querySelector('.txt');
+    const [file] = document.querySelector('input[type=file]').files;
+    const reader = new FileReader();
+
+    reader.addEventListener("load", () => {
+      // this will then display a text file
+      
+      document.getElementById("txt").innerHTML = reader.result;
+    }, false);
+
+    if (file) {
+      const [file] = document.querySelector('input[type=file]').files;
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+      // this will then display a text file
+      
+      document.getElementById("txt").value = reader.result;
+    }, false);
+    reader.readAsText(file);
+    document.getElementById("txt").value = reader.result;
+    }
+}
+</script>
     <button><a href="sharepage.html">Community Page</a></button></p>
     <button><a href="guide.html">How To Open Console</a></button>
     <p><button><a href="submissionpage.html">Submit A Page To Put on The Community Page</a></button></p>
