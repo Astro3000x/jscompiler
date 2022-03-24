@@ -1,0 +1,55 @@
+<h1>Do You Know Your Javascript?</h1>
+<link rel="icon" href="logo.png">
+<style>
+  
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+<script>
+  
+var questions = [
+     {
+           prompt: "What was Javascript Originally Called?\n(a) Espresso\n\ (b) Mocha\n(c) J-Script",
+           answer: "b"
+     },
+     {
+          prompt: "Who maintains JavaScript?\n(a) Microsoft\n\ (b) Google\n(c) Mozilla",
+          answer: "c"
+     },
+     {
+          prompt: "What company originally made JavaScript?\n(a) NetScape\n\ (b) Mozilla\n(c) MicroSoft",
+          answer: "a"
+     }
+];
+var score = 0;
+
+for(var i = 0; i < questions.length; i++){
+     var response = window.prompt(questions[i].prompt);
+     if(response == questions[i].answer){
+          score++;
+          alert("Correct!");
+     } else {
+          alert("Incorrect :(");
+     }
+}
+alert("you got " + score + "/" + questions.length);
+if (score == 3) {
+  alert("That's not bad!");
+}
+else if (score == 2) {
+  alert("So close!");
+}
+else if (score == 1) {
+  alert("Keep On Trying!");
+}
+else {
+  alert(":(");
+}
+document.write("<h1>Score: " + score + "/" + questions.length + "<h1>")
+
+</script>
