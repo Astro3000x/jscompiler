@@ -13,21 +13,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>JavaScript Editor and Compiler</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" id="style"/>
     <link rel="icon" href="jsedtiorlogo.png">
   </head>
-  <body>
+  <body id="bod"style="">
     <form>
      <label for="txt"> <!-- Add the label if you want -->
        <p><h1>Write Your Code In The Editor Below</h1></p>
-       <textarea rows="25" cols="100" id="txt" style="background-color: #ECDC68; accent-color: #323330; color: #323330;" value="javascript:code;" value=""></textarea>
+       <textarea rows="25" cols="100" id="txt" style="background-color: #ECDC68; accent-color: #323330; color: #323330;"></textarea>
      </label> 
      <!-- rows for length, cols for width. Both aren't required -->
    </form>
     <p><button><a href="javascript:run()">Run</a></button>
     <button><a href="javascript:save()">Save</a></button>
-    <button><a href="javascript:light()">Light Theme</a></button>
-    <button><a href="dark.html">Dark Theme</a></button></p>
+    <button><a href="javascript:lightmode()">Light Theme</a></button>
+    <button><a href="javascript:darkmode();">Dark Theme</a></button></p>
     <button><a href="javascript:download();" download="">Save To Computer</a></button></p>
     Upload File: <input type="file" onchange="javascript:previewFile()" accept=".js"><br>
 <p class="content"></p>

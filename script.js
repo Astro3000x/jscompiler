@@ -1,3 +1,4 @@
+
 function download() {
   var code = document.getElementById("txt").value;
   var textToSave = code;
@@ -46,3 +47,15 @@ function save() {
 
 }
 
+
+
+
+function darkmode() {
+  //document.getElementById("bod").style = "background-image: url("darkmode.png");";
+  document.getElementById("txt").style = "background-color: #323330; accent-color: #ECDC68; color: #ECDC68;"
+  document.getElementById("style").href = "darkstyle.css"
+}
+function lightmode() {
+  document.getElementById("txt").style = "background-color: #ECDC68; accent-color: #323330; color: #323330;"
+  document.getElementById("style").href = "style.css"
+}
