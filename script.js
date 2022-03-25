@@ -59,3 +59,15 @@ function lightmode() {
   document.getElementById("txt").style = "background-color: #ECDC68; accent-color: #323330; color: #323330;"
   document.getElementById("style").href = "style.css"
 }
+function helloworldtemp() {
+  document.getElementById("txt").value = "alert('hello world');"
+}
+function ifthentemp() {
+  document.getElementById("txt").value = 'if (1 == 1) {alert("hi")}'
+}
+function ifthentemp() {
+  document.getElementById("txt").value = 'if (1 == 1) {alert("hi")}'
+}
+function nametemp() {
+  document.getElementById("txt").value = 'var name = window.prompt("What is your name?") //add newline here:alert("Hi " + name)'
+}
