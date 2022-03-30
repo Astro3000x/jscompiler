@@ -5,3 +5,11 @@ body {
   background-size: cover;
   
 }
+#txt {
+  color: #ECDC68;
+  background-color: #323330;
+}
+#cookies {
+  background-color: #ECDC68;
+  color: #323330;
+}
