@@ -45,6 +45,10 @@ function signOut() {
 
 function run() {
     var code = document.getElementById("txt").value;
+  
+    if (code == "var rick = 'astley';") {
+      window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
     
     eval(code);
     
