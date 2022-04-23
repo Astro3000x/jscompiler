@@ -75,14 +75,11 @@ function lightmode() {
 function helloworldtemp() {
   document.getElementById("txt").value = "alert('hello world');"
 }
-function ifthentemp() {
-  document.getElementById("txt").value = 'if (1 == 1) {alert("hi")}'
-}
-function ifthentemp() {
-  document.getElementById("txt").value = 'if (1 == 1) {alert("hi")}'
+hentemp() {
+  document.getElementById("txt").value = 'if (1 == 1) {\n alert("hi")\n}'
 }
 function nametemp() {
-  document.getElementById("txt").value = 'var name = window.prompt("What is your name?") //add newline here:alert("Hi " + name)'
+  document.getElementById("txt").value = 'var name = window.prompt("What is your name?")\nalert("Hi " + name)'
 }
 function cookieOK() {
   document.getElementById("cookies").innerHTML = '';
