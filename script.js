@@ -75,9 +75,7 @@ function lightmode() {
 function helloworldtemp() {
   document.getElementById("txt").value = "alert('hello world');"
 }
-hentemp() {
-  document.getElementById("txt").value = 'if (1 == 1) {\n alert("hi")\n}'
-}
+
 function nametemp() {
   document.getElementById("txt").value = 'var name = window.prompt("What is your name?")\nalert("Hi " + name)'
 }
