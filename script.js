@@ -30,7 +30,14 @@ function onSignIn(googleUser) {
   }
   
 }
-  
+
+
+function installlib() {
+  var librarytoinput = window.prompt("Library URL To Import")
+  document.getElementById("libs").innerHTML += "<script src='"+librarytoinput+"'></script>"
+}
+
+
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {

@@ -1,2 +1,3 @@
-var github = window.prompt("Enter Raw Github Site URL Here");
-
+function test() {
+  alert("All good!");
+}
